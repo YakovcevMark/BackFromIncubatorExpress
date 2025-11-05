@@ -1,21 +1,21 @@
 import express, { type Response } from 'express';
-import { _PORT } from "./assets/constants.js";
-import { DB } from "./db/DB.js";
+import { _PORT } from "./src/assets/constants.js";
+import { DB } from "./src/db/DB.js";
 import type {
     GetEntityByIdParam,
     RequestWithBody,
     RequestWithParams,
     RequestWithParamsAndBody,
     RequestWithQueryParams
-} from "./assets/types.js";
+} from "./src/assets/types.js";
 
-import { HTTP_STATUS_CODES } from "./assets/http-status-codes.js";
-import {RoutePaths} from "./assets/route-paths.js";
-import type {GetUsersQueryParams} from "./entyties/models/users/types/get-users-query-params.js";
-import type {UserViewModel} from "./entyties/models/users/types/user-types.js";
-import {getUserViewModal} from "./entyties/models/users/helprers/get-user-view-modal.js";
-import type {CreateUserDto} from "./entyties/models/users/types/create-user-dto.js";
-import type {PatchUserDto} from "./entyties/models/users/types/patch-user-dto.js";
+import { HTTP_STATUS_CODES } from "./src/assets/http-status-codes.js";
+import {RoutePaths} from "./src/assets/route-paths.js";
+import type {GetUsersQueryParams} from "./src/entyties/models/users/types/get-users-query-params.js";
+import type {UserViewModel} from "./src/entyties/models/users/types/user-types.js";
+import {getUserViewModal} from "./src/entyties/models/users/helprers/get-user-view-modal.js";
+import type {CreateUserDto} from "./src/entyties/models/users/types/create-user-dto.js";
+import type {PatchUserDto} from "./src/entyties/models/users/types/patch-user-dto.js";
 
 const app = express();
 const jsonMiddleware = express.json()
