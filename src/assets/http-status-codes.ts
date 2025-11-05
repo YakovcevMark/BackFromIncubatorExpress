@@ -1,0 +1,7 @@
+export const HTTP_STATUS_CODES = {
+    OK_200: 200,
+    CREATED_201: 201,
+    NO_CONTENT_204: 204,
+    CLIENT_ERROR_400: 404,
+    NOT_FOUND_404: 404,
+}
